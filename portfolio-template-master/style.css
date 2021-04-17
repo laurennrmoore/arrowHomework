@@ -1,0 +1,269 @@
+/* step two, set up up global CSS variables */
+@import url('https://fonts.googleapis.com/css?family=Oswald|Rambla|Staatliches&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --color-primary: #000000;
+    --color-secondary: #ffffff;
+    --color-border: #ffffff34;
+    --font-staat: 'Staatliches', cursive;
+    --font-os:  'Oswald', sans-serif;
+    --font-ram: 'Rambla', sans-serif;
+}
+
+/* global classes */
+.font-Fairplay-Display{
+    font: normal 400 18px var(--font-staat);
+}
+.font-os{
+    font: normal 300 18px var(--font-os);
+}
+.font-ram{
+    font: normal bold 18px var(--font-ram);
+}
+
+.font-size-40{
+    font-size: 40px;
+}
+.font-size-34{
+    font-size: 34px;
+}
+.font-size-27{
+    font-size: 27px;
+}
+.font-size-20{
+    font-size: 20px;
+}
+.font-size-16{
+    font-size: 16px;
+}
+
+.bgcolor-primary{
+    background-color: var(--color-primary);
+}
+
+/* #global classes */
+ /* step four, add header CSS */
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index:1;
+    transition: left .5s ease;
+}
+
+#header nav{
+    height: 100vh;
+}
+#header .site-title .navbar-brand{
+    letter-spacing: 2px;
+    color: var(--color-secondary);
+}
+
+#header .nav-link{
+    margin: .7rem 1rem;
+    border-bottom: 1px solid var(--color-border);
+    text-transform: uppercase;
+}
+
+#header .nav-link:hover{
+    color: var(--color-secondary) !important;
+}
+
+#header .toggle-button{
+    background: none;
+    color: var(--color-primary);
+    position: fixed;
+    top: 25px;
+    right: 20px;
+    border: 1px solid var(--color-border);
+}
+
+.toggle-left{
+    left: 0 !important;
+    width: 1000px !important;
+}
+
+/* site-main */
+
+
+.site-banner .banner-area{
+    background: url(https://images.unsplash.com/photo-1468608374703-abdfab03d1bc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.site-banner .banner-area .author{
+    margin: 0;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.site-banner .banner-area .author .author-img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: auto;
+    background: url(./imgs/LaurenLinkedIn.jpg) no-repeat;
+    background-size: 200%;
+    background-position: 40% 0;
+}
+
+
+@media screen and (min-width: 768px){
+    .toggle-button{
+        display: none;
+    }
+    #header{
+        z-index:0;
+    }
+}
+
+
+
+/*  
+<div class="Projects">
+
+About Me Page
+Madlibs Project
+Pet Store
+Product Landing Page
+*/
+
+
+img {
+  display: block;
+  max-width: 70px;
+  max-height: 70px;
+  width: 100%;
+  height: auto;
+  justify-items:baseline;
+}
+
+
+
+
+
+
+
+
+  
+
+
+
+/* Education 
+
+<div class="Education">
+Web Development Training                            2021
+
+ITIL/ServiceNow Administration Training             2020
+Business Analyst - Requirement Solicitation Class   2017
+Software Quality Analyst Training Program           2016
+Bachelor's Arts Degree- MSJ University              2001
+</div>
+
+
+<div>    
+<strong><u>Work Experience</u><strong>
+<ul class="list-group">
+
+<li>Crothall Health Care/Children's Hospital</li>     2020-2020
+Utilized EPIC software to accept and track cleaning assignments
+Completed daily written assignment sheet  
+Cleaned and sanitized inpatient rooms ancillary areas 
+Wore required Personal Protective Equipment 
+Named July’s 2020’s “GEM” employee of the month and awarded a gift certificate
+
+
+
+
+
+<strong><u>Thrive Impact Sourcing</u></strong>                 
+Contractor at Caresource: Dayton, Ohio                      2016-2017
+Software Tester 
+Performed Multi-environment and User Acceptance testing reviews
+Mocked scenario test data to mimic acceptance criteria 
+Participated in Scrum/Agile Methodology of the SDLC
+Trained new team members and team leads
+Created training presentations for new team members and team leads
+ 
+
+
+
+
+
+<strong><u>Thrive Impact Sourcing </u></strong>             2017-2018
+Contractor at Caresource: Dayton, Ohio
+<u<Business Analyst</u>
+Caresource Claims team contractor serving their 1.9 million insured
+Liaison between claims team and stakeholders
+Collaborated with Agile team members to produce user stories
+Generated User Stories detailing Triage ticket information
+Initiated anti-fraud clause for children in Georgia receiving Medicaid-sponsored Autism treatment 
+
+
+
+
+
+
+
+<li>Home Health Care Contractor/Self Employed</li>          2006-20016 
+STNA/HHA
+Provided personal care for the elderly per care plan
+Documented care services provided per care plan
+Performed housekeeping, laundry, errands, pet care
+Traveled to various locations with clients 
+Assisted clients with loptops and tablets 
+
+
+
+</ul>
+</div>
+
+
+
+<div class"Volunteer Experience">
+<strong><u>Volunteer Experience</u></strong>
+<ul>
+<li>Compassion International</li> 
+<li>Little Free library Steward</li>
+<li>Hands Against Hunger</li>
+<li>Per Scholas Ambassador</li>
+<li>Dress For Success Ambassador</li>
+<li>Meals-to-go Crossroads Church</li> 
+<li>CareSource Volunteer Garden</li> 
+<li>Cystic Fibrosis Great Strides</li> 
+<li>Matthew 25 Ministries</li> 
+<li>Freeset Volunteer</li>
+</ul>
+</div>
+*/
+
+
+
+/* Contact 
+<div class"Contact">
+(c) 215-292-4656
+lmooreintech@gmail.com
+linkedIn:www.linkedin.com/in/lauren-r-m-a233b321"
+</div>
+*/
+
+
+
+
+
+
+
+
+
+

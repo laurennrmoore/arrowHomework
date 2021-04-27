@@ -1,7 +1,7 @@
 // Create a variable that is equal to an empty array and push the values 1-10 into the array using a For Loop
 
 var  myArray  = [];
- for  (var i= 1; i < 11; i++){
+ for (var i= 1; i < 11; i++){
 myArray.push (i);
 }  console.log(myArray);
 
@@ -11,16 +11,17 @@ myArray.push (i);
 // Repeat the same steps as above, but you're going to use a While Loop instead, push the values 1-10(inclusive) in descending order.
 
 var myArray = [];
-while (var i = 10; i > 0 ;  i -= 1) {
-myArray.push (i);
-} console.log(myArray);
+  var i = 10; 
+  while (i >= 1) { i -= 1
+  myArray.push (i);
+}   console.log(myArray);
 
 
 
 //Again set a Variable to an empty array but this time push a set of odd numbers 11-21 into the array using a For Loop.
 
 var myArray = [];
-For (var i = 21; i <12;  i -= 2 ) {
+for (var i = 21; i <12;  i -= 2 ) {
 myArray.push(i);
 } console.log(myArray);
 
